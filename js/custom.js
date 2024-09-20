@@ -32,15 +32,13 @@ $(document).on("click", '[data-toggle="lightbox"]', function (event) {
 
 
 
-document.getElementById('emailForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
+function sendEmail() {
     const name = document.getElementById('name').value;
     const phone = document.getElementById('phone').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    const mailtoLink = `mailto:eng.ahmed.yasser136@gmail.com?subject=Message from ${name}&body=Name: ${name}%0D%0APhone: ${phone}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+    const mailtoLink = `mailto:karim.araby1234@gmail.com?subject=Message from ${name}&body=Name: ${name}%0D%0APhone: ${phone}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
     
     window.location.href = mailtoLink;
-  });
+  }
